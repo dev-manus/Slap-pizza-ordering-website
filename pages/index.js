@@ -7,6 +7,7 @@ import AddButton from "../components/AddButton";
 import Featured from "../components/Featured";
 import PizzaList from "../components/PizzaList";
 import styles from "../styles/Home.module.css";
+import AboutUs from "../components/AboutUs";
 import SupplyChain from "../components/SupplyChain";
 
 export default function Home({ pizzaList, admin }) {
@@ -19,6 +20,7 @@ export default function Home({ pizzaList, admin }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>      
       <Featured />
+      <AboutUs/>
       {/* {<AddButton setClose={setClose} />} */}
       <PizzaList pizzaList={pizzaList} />
       <SupplyChain />

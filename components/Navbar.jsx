@@ -22,6 +22,7 @@ const Navbar = () => {
           <Link href="/" passHref>
             <li className={styles.listItem}>Homepage</li>
           </Link>
+          <Link href="#Aboutus" passHref><a className={styles.listItem}>About Us</a></Link>
           <Link href="#PizzaList" passHref><a className={styles.listItem}>Menu</a></Link>
           {/* <Link href="#second-section"><a className={styles.listItem}>Menu</a></Link> */}
           {/* <li className={styles.listItem}>About Us</li> */}
@@ -30,7 +31,7 @@ const Navbar = () => {
           <Link href="#SupplyChain" passHref><a className={styles.listItem}>Supply Chain</a></Link>
           {/* <li className={styles.listItem}>Reviews</li> */}
           {/* <li className={styles.listItem}>Contact Us</li> */}
-          <Link href="#Footer" passHref><a className={styles.listItem}>About Us</a></Link>
+          <Link href="#Footer" passHref><a className={styles.listItem}>Contact Us</a></Link>
         </ul>
       </div>
       <Link href="/cart" passHref>
