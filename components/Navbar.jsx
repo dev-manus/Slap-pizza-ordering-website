@@ -2,6 +2,7 @@ import Image from "next/image";
 import styles from "../styles/Navbar.module.css";
 import { useSelector } from "react-redux";
 import Link from "next/link";
+// import styles_ from "../styles/PizzaList.module.css";;
 
 const Navbar = () => {
   const quantity = useSelector((state) => state.cart.quantity);
@@ -21,12 +22,15 @@ const Navbar = () => {
           <Link href="/" passHref>
             <li className={styles.listItem}>Homepage</li>
           </Link>
-          <li className={styles.listItem}>About Us</li>
-          <li className={styles.listItem}>Menu</li>
+          <Link href="#PizzaList" passHref><a className={styles.listItem}>Menu</a></Link>
+          {/* <Link href="#second-section"><a className={styles.listItem}>Menu</a></Link> */}
+          {/* <li className={styles.listItem}>About Us</li> */}
+          {/* <li className={styles.listItem}>Menu</li> */}
           <Image src="/img/logo.png" alt="" width="160px" height="69px" />
-          <li className={styles.listItem}>Supply Chain</li>
-          <li className={styles.listItem}>Reviews</li>
-          <li className={styles.listItem}>Contact</li>
+          <Link href="#SupplyChain" passHref><a className={styles.listItem}>Supply Chain</a></Link>
+          {/* <li className={styles.listItem}>Reviews</li> */}
+          {/* <li className={styles.listItem}>Contact Us</li> */}
+          <Link href="#Footer" passHref><a className={styles.listItem}>About Us</a></Link>
         </ul>
       </div>
       <Link href="/cart" passHref>

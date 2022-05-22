@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const SupplyChain = () => {
     return (
-        <div className={styles.container} >
+        <div id= "SupplyChain" className={styles.container} >
                 <div className={styles.card}> 
                     <h1 className={styles.motto}>
                         QR Code for our supply chain here.
